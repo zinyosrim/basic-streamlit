@@ -5,8 +5,12 @@ import logging
 from azure.storage.blob import BlobClient
 from azure.core.exceptions import AzureError, HttpResponseError, ResourceNotFoundError
 
-# Configure logging
+# General logger configuration
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+# Get the logger for the Azure SDK and set its level to WARNING to suppress INFO logs
+azure_logger = logging.getLogger('azure')
+azure_logger.setLevel(logging.WARNING)
 
 def dataframe_from_azure_blob_csv() -> pd.DataFrame:
     """
