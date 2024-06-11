@@ -1,0 +1,41 @@
+# System files
+.DS_Store
+
+# Environment settings
+.env
+
+# Virtual environment
+.venv/
+
+# Python bytecodes
+__pycache__/
+*.py[cod]
+
+# Development containers
+.devcontainer/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Python distribution artifacts
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Poetry lock file (only ignore if you want to ensure exact dependencies on other machines)
+# poetry.lock
+
+# Logs
+*.log
+
+# Docker ignore specifics
+**/.dockerignore
+
+# Test directories
+/tests/__pycache__/
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
