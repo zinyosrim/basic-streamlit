@@ -29,8 +29,6 @@ build/
 # Logs
 *.log
 
-# Docker ignore specifics
-**/.dockerignore
 
 # Test directories
 /tests/__pycache__/

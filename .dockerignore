@@ -1,0 +1,35 @@
+# Ignore typical files that should not be included in the Docker image
+.DS_Store
+.git
+.gitignore
+.dockerignore
+README.md
+*.md
+
+# Python environment files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+db.sqlite3
+.ipynb_checkpoints
+
+# Ignore the virtualenv
+.venv
+env/
+ENV/
+
+# Ignore development and testing artifacts
+node_modules/
+coverage/
+.vscode/
+.idea/
+*.swp
+*~
+tests/
+*.log
+tmp/
+
+# Important: Ignore environment variable files
+.env
